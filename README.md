@@ -39,6 +39,12 @@ Start the server
   npm run start
 ```
 
+Se o comando acima não funcionar rode e tente novamente
+
+```bash
+  npm run build
+```
+
 ## Tutorial de como utilizar o bot depois de executar o projeto:
 ### Tutorial de como criar figurinha
 ![criar figurinha](https://figurinha.s3.us-east-1.amazonaws.com/figurinha_1.png)
