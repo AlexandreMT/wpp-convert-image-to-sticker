@@ -1,8 +1,6 @@
 import { create, Client, Message } from '@open-wa/wa-automate';
 import { Converter } from './core';
-import { Database } from './core/Database';
 import { Helper } from './core/Helper';
-import { Logger } from './core/Logger';
 
 const COMMANDS = ['!figurinha', '!sticker', '!gif', '!semfundo', '!help'];
 const BLACK_LIST = ['556392785687']
@@ -21,7 +19,7 @@ async function start (client: Client) {
       const isBlackListed = BLACK_LIST.some(number => {
         return message.from.startsWith(number)
       })
-      const logger = new Logger(message.body, message.from)
+      // const logger = new Logger(message.body, message.from)
       try {
         if (hasCommand) {
           if (message.text === '!help') {
@@ -31,14 +29,14 @@ async function start (client: Client) {
             }
             const helper = new Helper(client, message)
             await helper.execute()
-            logger.log()
+            // logger.log()
           }
           else {
             const converter = new Converter(client, message)
             await converter.convert()
             await client.sendText(message.from, successMessage);
             await client.sendText(message.from, pixMessage);
-            logger.log()
+            // logger.log()
           }
           return
         }
@@ -47,7 +45,7 @@ async function start (client: Client) {
           message.from,
           'Não foi possivel converter o arquivo enviado em figurinha, tente novamente.'
         );
-        logger.log(err)
+        // logger.log(err)
         // new Database().disconnect()
         return;
       }
@@ -55,7 +53,6 @@ async function start (client: Client) {
 }
 
 const main = async () => {
-  new Database().connect()
   const client = await create({ qrTimeout: 0 })
   start(client)
 }
