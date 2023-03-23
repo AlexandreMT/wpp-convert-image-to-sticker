@@ -60,6 +60,7 @@ Se o comando acima não funcionar rode e tente novamente
 
 - [@eugustavo](https://www.github.com/eugustavo)
 - [@lucsbasto](https://www.github.com/lucsbasto)
+- [@ronicley](https://www.github.com/ronicley)
 
 
 ## Commands 

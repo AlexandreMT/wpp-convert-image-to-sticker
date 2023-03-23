@@ -8,7 +8,7 @@ const successMessage = `
 Se gostou das funcionalidades ajude a manter o bot online fazendo uma doação de qualquer valor:
 *PIX:* 
 `;
-const pixMessage = '4c432df3-8b6b-4496-a83f-7b6c59615cde'
+const pixMessage = 'f1af71f2-f800-4626-afff-ab2fb5a71dff'
 
 async function start (client: Client) {
   console.log('Bot iniciado com sucesso!')
