@@ -43,6 +43,7 @@ Se o comando acima não funcionar rode e tente novamente
 
 ```bash
   npm run build
+  
 ```
 
 ## Tutorial de como utilizar o bot depois de executar o projeto:
