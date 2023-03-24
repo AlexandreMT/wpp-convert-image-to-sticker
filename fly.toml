@@ -1,8 +1,9 @@
-# fly.toml file generated for lively-darkness-3950 on 2023-01-15T14:58:39-03:00
+# fly.toml file generated for lively-darkness-3950 on 2023-03-24T15:11:17-03:00
 
 app = "lively-darkness-3950"
 kill_signal = "SIGINT"
 kill_timeout = 5
+primary_region = "gig"
 processes = []
 
 [env]
