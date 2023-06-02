@@ -34,8 +34,8 @@ async function start (client: Client) {
           else {
             const converter = new Converter(client, message)
             await converter.convert()
-            await client.sendText(message.from, successMessage);
-            await client.sendText(message.from, pixMessage);
+            // await client.sendText(message.from, successMessage);
+            // await client.sendText(message.from, pixMessage);
             // logger.log()
           }
           return

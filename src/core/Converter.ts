@@ -3,8 +3,8 @@ import { CropPositionEnum, Media, Meta, VideoOpts } from './types';
 
 export class Converter {
   private meta: Meta = {
-    author: 'Ronicley Silva',
-    pack: 'Sticker Bot - by',
+    author: 'gado d+',
+    pack: 'Sticker Bot - by gado d+',
     keepScale: true,
     cropPosition: CropPositionEnum.center,
   };
